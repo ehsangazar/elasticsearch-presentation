@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import elasticseachImg from '../assets/img/elasticsearch.png'
+
 const IndexPage = () => (
   <div className='container'>
     <div className="row center">
@@ -8,7 +10,7 @@ const IndexPage = () => (
         <img
           style={{
             width: '100%',
-          }} src="/static/elasticsearch.png" />
+          }} src={elasticseachImg} />
       </div>
       <h2>
         for Real-time Analytics

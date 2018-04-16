@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import profileImg from '../assets/img/profile.jpg'
 
 const WhoAmI = () => (
   <div className='container'>
@@ -11,7 +12,7 @@ const WhoAmI = () => (
         <img
           style={{
             width: '100%',
-          }} src="/static/profile.jpg" />
+          }} src={profileImg} />
       </div>
       <div className="col-10">
         <h1 style={{

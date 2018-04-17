@@ -67,7 +67,7 @@ const IndexPage = () => (
               </div>
             </span>
           </BounceInDiv>
-          <ul>
+          <ol>
             {Routes.map((item, index) => {
               if (index === 0) return null;
               return (
@@ -76,7 +76,7 @@ const IndexPage = () => (
                 </SlideInLeftLi>
               );
             })}
-          </ul>
+          </ol>
         </div>
       </div>
     </Page>

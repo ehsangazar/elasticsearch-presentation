@@ -6,7 +6,7 @@ import Page from '../components/page';
 import Routes from '../routes';
 
 const Index = (props) => {
-  const IndexNumber = Routes.findIndex(item => item.link === props.location.pathname);
+  const IndexNumber = Routes.findIndex(item => item.link === props.location.pathname) || 0;
   return (
     <div>
       <Helmet

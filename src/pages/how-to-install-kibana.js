@@ -8,7 +8,7 @@ import kibanaLoginImg from '../assets/img/kibana-login.png';
 import kibanaPng from '../assets/img/kibana.png';
 
 const Index = (props) => {
-  const IndexNumber = Routes.findIndex(item => item.link === props.location.pathname);
+  const IndexNumber = Routes.findIndex(item => item.link === props.location.pathname) || 0;
   return (
     <div>
       <Helmet

@@ -7,7 +7,7 @@ import installElasticPng from '../assets/img/install-elasticsearch.png';
 import elasticSeachViewImg from '../assets/img/elasticsearch-view.png';
 
 const Index = (props) => {
-  const IndexNumber = Routes.findIndex(item => item.link === props.location.pathname);
+  const IndexNumber = Routes.findIndex(item => item.link === props.location.pathname) || 0;
   return (
     <div>
       <Helmet

@@ -9,8 +9,7 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Elasticsearch for real time analytics Talk by Ehsan Gazar' },
       ]}
     />
     <div

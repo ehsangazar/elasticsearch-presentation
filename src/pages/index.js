@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import styled, { keyframes } from 'styled-components';
 import bouncein from 'react-animations/lib/bounce-in';
 import slideinleft from 'react-animations/lib/slide-in-left';
+import Helmet from 'react-helmet';
 import Header from '../components/header';
 
 import elasticseachImg from '../assets/img/elasticsearch.png';
@@ -24,7 +25,10 @@ const SlideInLeftLi = styled.li`
 
 const IndexPage = () => (
   <div>
-    <Header siteTitle="" nextSlide={{ link: '/who-am-i', title: 'Who Am I' }} />
+    <Helmet
+      title="Elasticsearch Talk by Ehsan Gazar"
+    />
+    <Header nextSlide={{ link: '/who-am-i', title: 'Who Am I' }} />
     <div className="container">
       <div className="row ">
         <BounceInDiv>

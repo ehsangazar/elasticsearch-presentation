@@ -3,4 +3,4 @@ module.exports = {
     title: '',
   },
   plugins: ['gatsby-plugin-react-helmet'],
-}
+};

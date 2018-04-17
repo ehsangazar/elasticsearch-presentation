@@ -47,11 +47,17 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  opacity: 0.8;
 }
 
 a:active,
 a:hover {
   outline-width: 0;
+  font-size: 101%;
+  opacity: 1;
+  transition-duration: 0.1s;
 }
 
 abbr[title] {

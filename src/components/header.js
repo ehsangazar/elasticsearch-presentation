@@ -1,11 +1,12 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, prevSlide, nextSlide }) => (
   <div
     style={{
       background: '#261923',
       marginBottom: '1.45rem',
+      height: '3em',
     }}
   >
     <div
@@ -13,6 +14,7 @@ const Header = ({ siteTitle }) => (
         margin: '0 auto',
         maxWidth: 960,
         padding: '1.45rem 1.0875rem',
+        position: 'relative',
       }}
     >
       <h1 style={{ margin: 0 }}>
@@ -26,8 +28,44 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      {prevSlide &&
+        <span style={{
+          position: 'absolute',
+          left: 0,
+          top: '1em',
+        }}
+        >
+          <Link
+            to={prevSlide.link}
+            style={{
+              color: 'white',
+              textDecoration: 'none',
+            }}
+          >
+            {'<'} {prevSlide.title}
+          </Link>
+        </span>
+      }
+      {nextSlide &&
+        <span style={{
+          position: 'absolute',
+          right: 0,
+          top: '1em',
+        }}
+        >
+          <Link
+            to={nextSlide.link}
+            style={{
+              color: 'white',
+              textDecoration: 'none',
+            }}
+          >
+            {nextSlide.title} {'>'}
+          </Link>
+        </span>
+      }
     </div>
   </div>
-)
+);
 
-export default Header
+export default Header;

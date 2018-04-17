@@ -18,48 +18,66 @@ const Index = (props) => {
             <ul>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://en.wikipedia.org/wiki/Elasticsearch
+                  <a href="https://en.wikipedia.org/wiki/Elasticsearch">
+                    https://en.wikipedia.org/wiki/Elasticsearch
+                  </a>
                 </h3>
               </li>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://aws.amazon.com/elasticsearch-service/
+                  <a href="https://aws.amazon.com/elasticsearch-service/">
+                    https://aws.amazon.com/elasticsearch-service/
+                  </a>
                 </h3>
               </li>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://www.elastic.co/cloud
+                  <a href="https://www.elastic.co/cloud">
+                    https://www.elastic.co/cloud
+                  </a>
                 </h3>
                 <span style={{ paddingLeft: '2em' }}>Kibana, Logstach, ...</span>
               </li>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://github.com/elastic/elasticsearch
+                  <a href="https://github.com/elastic/elasticsearch">
+                    https://github.com/elastic/elasticsearch
+                  </a>
                 </h3>
               </li>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://lucene.apache.org/core/
+                  <a href="https://lucene.apache.org/core/">
+                    https://lucene.apache.org/core/
+                  </a>
                 </h3>
               </li>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://www.youtube.com/watch?v=bZGSHm-XE1A
+                  <a href="https://www.youtube.com/watch?v=bZGSHm-XE1A">
+                    https://www.youtube.com/watch?v=bZGSHm-XE1A
+                  </a>
                 </h3>
               </li>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://www.quora.com/Which-should-I-learn-Apache-Solr-or-Elasticsearch
+                  <a href="https://www.quora.com/Which-should-I-learn-Apache-Solr-or-Elasticsearch">
+                    https://www.quora.com/Which-should-I-learn-Apache-Solr-or-Elasticsearch
+                  </a>
                 </h3>
               </li>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://stackoverflow.com/questions/12723239/elasticsearch-v-s-mongodb-for-filtering-application
+                  <a href="https://stackoverflow.com/questions/12723239/elasticsearch-v-s-mongodb-for-filtering-application">
+                    https://stackoverflow.com/questions/12723239/elasticsearch-v-s-mongodb-for-filtering-application
+                  </a>
                 </h3>
               </li>
               <li style={{ padding: '.5em 0px' }}>
                 <h3>
-                  https://www.tutorialspoint.com/elasticsearch
+                  <a href="https://www.tutorialspoint.com/elasticsearch">
+                    https://www.tutorialspoint.com/elasticsearch
+                  </a>
                 </h3>
               </li>
             </ul>

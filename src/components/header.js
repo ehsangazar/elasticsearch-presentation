@@ -59,7 +59,7 @@ class Header extends React.Component {
             }
           </span>
           <h2 className="col-6 center" style={{ color: 'white' }}>
-            {currentNumber !== 0 &&
+            {currentNumber !== 0 && Routes[currentNumber] &&
               Routes[currentNumber].title
             }
           </h2>

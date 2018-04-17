@@ -1,55 +1,40 @@
 import React from 'react';
-import Link from 'gatsby-link';
-import profileImg from '../assets/img/profile.jpg';
+import luecenImg from '../assets/img/lucene.png';
 import Header from '../components/header';
+import Page from '../components/page';
 
-const WhoAmI = () => (
+const WhatIsElasticSearch = () => (
   <div>
-    <Header siteTitle="" prevSlide={{ link: '/', title: 'Home' }} nextSlide={{ link: '/next', title: 'something' }} />
-    <div className="container">
-      <div className="row">
-        <div
-          className="col-2"
-          style={{ textAlign: 'center' }}
-        >
-          <img
-            alt="ehsan gazar profile"
-            style={{
-              width: '100%',
-            }}
-            src={profileImg}
-          />
+    <Header siteTitle="What is ElasticSearch" prevSlide={{ link: '/who-am-i', title: '2/24: Who Am I' }} nextSlide={{ link: '/what-is-kibana', title: '4/24: What is Kibana' }} />
+    <Page>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <h2 >
+              Elasticsearch is an open-source, RESTful, distributed search and analytics engine built on
+            <a rel="noopener noreferrer" href="https://lucene.apache.org/core/"> Apache Lucene</a>
+
+            </h2>
+            <br />
+            <hr />
+            <br />
+            <br />
+
+            <h3>
+              But What is Apache Lucene?
+            </h3>
+            <div className="center">
+              <img src={luecenImg} alt="lecene" />
+            </div>
+            <br />
+            <h2 >
+              Apache LuceneTM is a high-performance, full-featured text search engine library written entirely in Java. It is a technology suitable for nearly any application that requires full-text search, especially cross-platform.
+            </h2>
+          </div>
         </div>
-        <div className="col-10">
-          <h1 style={{
-            fontSize: '5em',
-          }}
-          >
-            Ehsan Gazar
-          </h1>
-          <h3>
-            Full Stack Engineer at <a href="cheproximity.com.au">CHE Proximity</a>
-          </h3>
-          <p>
-            An entrepreneur, engineer, writer, philanthropist and optimist who can help you evolve yourself
-          </p>
-          <ul>
-            <li>
-              <a href="http://ehsangazar.com">EhsanGazar.com</a>
-            </li>
-            <li>
-              <a href="http://twitter.com/ehsangazar">@ehsangazar</a>
-            </li>
-            <li>
-              <a href="mailto:me@ehsangazar.com">me@ehsangazar.com</a>
-            </li>
-          </ul>
-          <span style={{ fontSize: '12px' }}>This presentation created by Gatsby.</span>
-        </div>
-        <Link to="/">{'<'} Slide1: Home</Link>
       </div>
-    </div>
+    </Page>
   </div>
 );
 
-export default WhoAmI;
+export default WhatIsElasticSearch;

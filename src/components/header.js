@@ -6,10 +6,11 @@ const Header = ({ siteTitle, prevSlide, nextSlide }) => (
     style={{
       background: '#261923',
       marginBottom: '1.45rem',
-      height: '3em',
+      transitionDuration: '1s',
     }}
   >
     <div
+      className="row"
       style={{
         margin: '0 auto',
         maxWidth: 960,
@@ -17,24 +18,8 @@ const Header = ({ siteTitle, prevSlide, nextSlide }) => (
         position: 'relative',
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-      {prevSlide &&
-        <span style={{
-          position: 'absolute',
-          left: 0,
-          top: '1em',
-        }}
-        >
+      <span className="col-3" style={{ textAlign: 'left', fontSize: '0.8em' }}>
+        {prevSlide &&
           <Link
             to={prevSlide.link}
             style={{
@@ -44,15 +29,13 @@ const Header = ({ siteTitle, prevSlide, nextSlide }) => (
           >
             {'<'} {prevSlide.title}
           </Link>
-        </span>
-      }
-      {nextSlide &&
-        <span style={{
-          position: 'absolute',
-          right: 0,
-          top: '1em',
-        }}
-        >
+        }
+      </span>
+      <h2 className="col-6 center" style={{ color: 'white' }}>
+        {siteTitle}
+      </h2>
+      <span className="col-3" style={{ textAlign: 'right', fontSize: '0.8em' }}>
+        {nextSlide &&
           <Link
             to={nextSlide.link}
             style={{
@@ -62,10 +45,10 @@ const Header = ({ siteTitle, prevSlide, nextSlide }) => (
           >
             {nextSlide.title} {'>'}
           </Link>
-        </span>
-      }
+        }
+      </span>
     </div>
-  </div>
+  </div >
 );
 
 export default Header;

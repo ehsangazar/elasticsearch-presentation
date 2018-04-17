@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Routes from '../routes';
 
-const Header = ({ siteTitle, prevSlide, nextSlide }) => (
+const Header = ({ currentNumber = 0 }) => (
   <div
     style={{
       background: '#261923',
@@ -18,32 +19,34 @@ const Header = ({ siteTitle, prevSlide, nextSlide }) => (
         position: 'relative',
       }}
     >
-      <span className="col-3" style={{ textAlign: 'left', fontSize: '0.8em' }}>
-        {prevSlide &&
+      <span className="col-3" style={{ textAlign: 'left', fontSize: '0.7em' }}>
+        {Routes[currentNumber - 1] &&
           <Link
-            to={prevSlide.link}
+            to={Routes[currentNumber - 1].link}
             style={{
               color: 'white',
               textDecoration: 'none',
             }}
           >
-            {'<'} {prevSlide.title}
+            {'<'} {`${currentNumber - 1}/${Routes.length - 1}`}: {Routes[currentNumber - 1].title}
           </Link>
         }
       </span>
       <h2 className="col-6 center" style={{ color: 'white' }}>
-        {siteTitle}
+        {currentNumber !== 0 &&
+          Routes[currentNumber].title
+        }
       </h2>
-      <span className="col-3" style={{ textAlign: 'right', fontSize: '0.8em' }}>
-        {nextSlide &&
+      <span className="col-3" style={{ textAlign: 'right', fontSize: '0.7em' }}>
+        {Routes[currentNumber + 1] &&
           <Link
-            to={nextSlide.link}
+            to={Routes[currentNumber + 1].link}
             style={{
               color: 'white',
               textDecoration: 'none',
             }}
           >
-            {nextSlide.title} {'>'}
+            {`${currentNumber + 1}/${Routes.length - 1}`}: {Routes[currentNumber + 1].title} {'>'}
           </Link>
         }
       </span>

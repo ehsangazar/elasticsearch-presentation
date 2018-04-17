@@ -11,7 +11,7 @@ const Index = (props) => {
   return (
     <div>
       <Helmet
-        title={Routes[IndexNumber].title}
+        title={Routes[IndexNumber] && Routes[IndexNumber].title}
       />
       <Header currentNumber={IndexNumber} />
       <Page>
@@ -21,7 +21,7 @@ const Index = (props) => {
               <img src={installElasticPng} alt="What is kibana" />
             </div>
             <div className="col-12">
-              <img style={{ width: '100%' }} src={elasticSeachViewImg} alt={Routes[IndexNumber].title} />
+              <img style={{ width: '100%' }} src={elasticSeachViewImg} alt={Routes[IndexNumber] && Routes[IndexNumber].title} />
             </div>
           </div>
         </div>

@@ -11,7 +11,7 @@ const Index = (props) => {
   return (
     <div>
       <Helmet
-        title={Routes[IndexNumber].title}
+        title={Routes[IndexNumber] && Routes[IndexNumber].title}
       />
       <Header currentNumber={IndexNumber} />
       <Page>

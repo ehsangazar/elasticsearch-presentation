@@ -9,14 +9,14 @@ const Index = (props) => {
   return (
     <div>
       <Helmet
-        title={Routes[IndexNumber].title}
+        title={Routes[IndexNumber] && Routes[IndexNumber].title}
       />
       <Header currentNumber={IndexNumber} />
       <Page>
         <div className="container">
           <div className="row">
             <div className="col-12">
-              {Routes[IndexNumber].title}
+              {Routes[IndexNumber] && Routes[IndexNumber].title}
             </div>
           </div>
         </div>

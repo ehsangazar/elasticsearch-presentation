@@ -3,6 +3,7 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Page from '../components/page';
 import Routes from '../routes';
+import deleteAPIImg from '../assets/img/delete-api.png';
 
 const Index = (props) => {
   const IndexNumber = Routes.findIndex(item => item.link === props.location.pathname) || 0;
@@ -16,7 +17,7 @@ const Index = (props) => {
         <div className="container">
           <div className="row">
             <div className="col-12">
-              {Routes[IndexNumber] && Routes[IndexNumber].title}
+              <img src={deleteAPIImg} alt={Routes[IndexNumber] && Routes[IndexNumber].title} />
             </div>
           </div>
         </div>

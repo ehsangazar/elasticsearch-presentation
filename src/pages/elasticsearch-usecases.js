@@ -15,9 +15,28 @@ const Index = (props) => {
       <Page>
         <div className="container">
           <div className="row">
-            <div className="col-12">
-              {Routes[IndexNumber] && Routes[IndexNumber].title}
-            </div>
+            <ul>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Log Analytics
+                </h2>
+              </li>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Full Text Search
+                </h2>
+              </li>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Distributed Document Store
+                </h2>
+              </li>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Real-time Application Monitoring
+                </h2>
+              </li>
+            </ul>
           </div>
         </div>
       </Page>

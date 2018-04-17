@@ -2,25 +2,20 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled, { keyframes } from 'styled-components';
 import bouncein from 'react-animations/lib/bounce-in';
-import slideinleft from 'react-animations/lib/slide-in-left';
 import Helmet from 'react-helmet';
-import Header from '../components/header';
 import Page from '../components/page';
 import profileImg from '../assets/img/profile.jpg';
 import elasticseachImg from '../assets/img/elasticsearch.png';
 import Routes from '../routes';
+import Header from '../components/header';
 
 const bounceinAnimation = keyframes`${bouncein}`;
-const slideinleftnimation = keyframes`${slideinleft}`;
 
 const BounceInDiv = styled.div`
   animation: 1s ${bounceinAnimation};
 `;
 
 const SlideInLeftLi = styled.li`
-  animation-name: ${slideinleftnimation};
-  animation-duration: ${props => props.time || 1}s;
-  animation-delay: 0s;
   font-size: 1.7em;
 `;
 

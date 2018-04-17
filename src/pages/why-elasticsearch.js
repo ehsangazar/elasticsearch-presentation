@@ -15,9 +15,34 @@ const Index = (props) => {
       <Page>
         <div className="container">
           <div className="row">
-            <div className="col-12">
-              {Routes[IndexNumber] && Routes[IndexNumber].title}
-            </div>
+            <ul>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Rapid Query Execution
+                </h2>
+              </li>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Easy-to-use APIs
+                </h2>
+              </li>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Complimentary Tooling and Plug-ins
+                </h2>
+                <span style={{ paddingLeft: '2em' }}>Kibana, Logstach, ...</span>
+              </li>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Near Real-time Index Updates
+                </h2>
+              </li>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  Support for your Favourite Development Language
+                </h2>
+              </li>
+            </ul>
           </div>
         </div>
       </Page>

@@ -15,9 +15,18 @@ const Index = (props) => {
       <Page>
         <div className="container">
           <div className="row">
-            <div className="col-12">
-              {Routes[IndexNumber] && Routes[IndexNumber].title}
-            </div>
+            <ul>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  If Elasticsearch can store data with ready to use RESTful APIs, Could you use it instead of Mongodb?
+                </h2>
+              </li>
+              <li style={{ padding: '1.5em 0px' }}>
+                <h2>
+                  What is an alternative of ElasticSearch?
+                </h2>
+              </li>
+            </ul>
           </div>
         </div>
       </Page>

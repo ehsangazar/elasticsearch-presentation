@@ -15,9 +15,9 @@ const Index = (props) => {
       <Page>
         <div className="container">
           <div className="row">
-            <div className="col-12">
-              {Routes[IndexNumber] && Routes[IndexNumber].title}
-            </div>
+            <h1>
+              Thank You
+            </h1>
           </div>
         </div>
       </Page>

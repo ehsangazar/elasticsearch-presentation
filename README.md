@@ -1,26 +1,22 @@
-# gatsby-starter-default
-The default Gatsby starter.
-
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+# This is my presentation for elasticsearch talk
+URL: http://elastic-search-presentation.ehsangazar.com/
 
 ## Install
 
-Make sure that you have the Gatsby CLI program installed:
 ```sh
-npm install --global gatsby-cli
+npm i
 ```
 
-And run from your CLI:
+## Development
 ```sh
-gatsby new gatsby-example-site
+gatsby develop
 ```
 
-Then you can run it by:
+## Production
 ```sh
-cd gatsby-example-site
-npm run develop
+gatsby build
+gatsby server
 ```
 
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Slideshow with react
+I have created a src/routes.js which allows you to simply edit order of slides with setting the url and title
